@@ -1,0 +1,58 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6a8dff"/>
+      <stop offset="1" stop-color="#3b5bdb"/>
+    </linearGradient>
+    <linearGradient id="head" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e6ecff"/>
+    </linearGradient>
+    <radialGradient id="eye" cx="0.5" cy="0.4" r="0.7">
+      <stop offset="0" stop-color="#8fe3ff"/>
+      <stop offset="0.6" stop-color="#22a7f0"/>
+      <stop offset="1" stop-color="#0b6fb8"/>
+    </radialGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="22" flood-color="#1b2a6b" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- rounded-square app background (macOS style) -->
+  <rect x="96" y="96" width="832" height="832" rx="185" fill="url(#bg)"/>
+  <rect x="96" y="96" width="832" height="832" rx="185" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="4"/>
+
+  <g filter="url(#soft)">
+    <!-- antenna -->
+    <line x1="512" y1="235" x2="512" y2="300" stroke="#e6ecff" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="512" cy="222" r="30" fill="#8fe3ff" stroke="#ffffff" stroke-width="6"/>
+
+    <!-- head -->
+    <rect x="296" y="300" width="432" height="360" rx="86" fill="url(#head)" stroke="#c3ccec" stroke-width="6"/>
+
+    <!-- eyes -->
+    <circle cx="420" cy="470" r="62" fill="url(#eye)"/>
+    <circle cx="604" cy="470" r="62" fill="url(#eye)"/>
+    <circle cx="440" cy="450" r="18" fill="#ffffff" fill-opacity="0.85"/>
+    <circle cx="624" cy="450" r="18" fill="#ffffff" fill-opacity="0.85"/>
+
+    <!-- mouth / speaker grille -->
+    <rect x="404" y="560" width="216" height="46" rx="23" fill="#c3ccec"/>
+    <rect x="430" y="573" width="16" height="20" rx="6" fill="#7c8bbf"/>
+    <rect x="466" y="573" width="16" height="20" rx="6" fill="#7c8bbf"/>
+    <rect x="502" y="573" width="16" height="20" rx="6" fill="#7c8bbf"/>
+    <rect x="538" y="573" width="16" height="20" rx="6" fill="#7c8bbf"/>
+    <rect x="574" y="573" width="16" height="20" rx="6" fill="#7c8bbf"/>
+
+    <!-- ears -->
+    <rect x="256" y="430" width="42" height="120" rx="20" fill="#dfe6ff" stroke="#c3ccec" stroke-width="5"/>
+    <rect x="726" y="430" width="42" height="120" rx="20" fill="#dfe6ff" stroke="#c3ccec" stroke-width="5"/>
+
+    <!-- neck -->
+    <rect x="470" y="660" width="84" height="46" fill="#d3daf2"/>
+
+    <!-- body -->
+    <rect x="356" y="700" width="312" height="120" rx="54" fill="url(#head)" stroke="#c3ccec" stroke-width="6"/>
+    <circle cx="512" cy="760" r="30" fill="url(#eye)"/>
+  </g>
+</svg>
